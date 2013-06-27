@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    min-width: 940px
+}
+
+ul, ol {
+    list-style: none
+}
+
+#main {
+    width: 940px;
+    margin: 0 auto
+}
+
+#header, #content, #footer {
+    font-size: 0.75em
+}
+
+
+
+/* HEADER */
+#header {
+    height: 320px;
+    position: relative
+}
+
+#header .row-1 {
+    height: 50px;
+}
+
+#header .row-1 .fright {
+    padding: 10px;
+    font-size: larger;
+
+}
+
+#header .row-2 {
+    background: #4399e6;
+    position: relative
+}
+
+#header .row-2 ul {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    background: #4399e6;
+}
+
+#header .row-2 ul li {
+    float: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.2em;
+    background: #4399e6;
+    padding: 4px 2px 0 0
+}
+
+#header .row-2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    width: 186px;
+    text-align: center;
+    display: block;
+    padding: 14px 0 0 0;
+
+}
+
+#header .row-2 ul li a span {
+    display: block;
+    height: 40px
+}
+
+#header .row-2 ul li a:hover,
+#header .row-2 ul li a.active {
+    background: #c1f0ff;
+}
+
+#header .row-3 {
+    height: 200px;
+    overflow: hidden;
+    background: #333
+}
+
+#header .row-3 .inside {
+    padding: 35px 0 0 30px;
+    width: 200px;
+    position: relative;
+}
+
+#header .row-3 .inside p {
+    color: #fff;
+}
+
+/* CONTENT */
+
+#content {
+    padding-bottom: 20px;
+    min-height: 550px;
+}
+
+#content .col-1 {
+    width: 620px;
+    padding: 10px 0;
+    float: left
+}
+
+#content .col-2 {
+    width: 300px;
+    float: right;
+}
+
+.fright {
+    float: right
+}
+
+/* BOXES */
+
+.box1 {
+    width: 100%;
+    background-color: #176ac7
+}
+
+.box2 {
+    width: 100%;
+    border-top: 2px solid #3593da;
+    background: #176ac7
+}
+
+
+.box3 {
+    width: 100%;
+    border-top: 2px solid #3593da;
+    background: #176ac7
+}
+
+/* FOOTER */
+#footer .footer-nav {
+    background: #000
+}
+
+#footer .footer-nav .left {
+    background: #000
+}
+
+#footer .footer-nav ul {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0 16px 0;
+    background: #444
+}
+
+#footer .footer-nav ul li {
+    float: left;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+    padding: 0 72px
+}
+
+#footer .footer-nav ul li.last {
+    border: 0
+}
+
+#footer .footer-nav ul li a {
+    color: #fff
+}
+#footer a {
+    color: #4399e6
+}
+
+#footer .bottom {
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 18px 0 23px 0
+}

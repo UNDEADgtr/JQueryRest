@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Json Project</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Json Project for test jquery"/>
+    <meta name="keywords" content="jquery, json, javascript"/>
+    <meta name="author" content="Created by UNDEAD"/>
+
+
+    <link rel="stylesheet" href="css/jquery.dataTables.css"/>
+    <link rel="stylesheet" href="css/cars.css"/>
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.11.custom.css"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/headerMenu.css"/>
+    <link rel="stylesheet" href="css/content.css"/>
+
+
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="lib/jquery-ui-1.8.11.custom.min.js"></script>
+
+    <script src="lib/jquery.dataTables.min.js"></script>
+    <script src="js/cars.js"></script>
+
+
+</head>
+
+<body>
+
+
+<div id="main">
+
+<div id="header">
+    <div class="row-1">
+        <div class="fright">
+            JNET
+        </div>
+    </div>
+    <div class="row-2">
+        <div id="mainMenu">
+            <ul>
+                <li><a href="#" class="active"><span>home</span></a></li>
+                <li><a href="#"><span>add</span></a></li>
+                <li><a href="#"><span>get</span></a></li>
+                <li><a href="#"><span>update</span></a></li>
+                <li><a href="#"><span>delete</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="inside">
+
+            <p>Result</p>
+
+        </div>
+        <div><img src="" alt=""/></div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="col-1">
+
+        <div id="home">
+            <h1>Manage cars</h1>
+
+            <div id="msg"></div>
+            <fieldset id="carData">
+
+                <label for="ID">Number</label>
+                <input id="ID" disabled>
+                <br>
+
+                <label for="name">Name</label>
+                <input id="name">
+                <br>
+                <label for="description">Description</label>
+                <input id="description">
+                <br>
+                <label for="color">Color</label>
+                <input id="color">
+                <br>
+                <label for="cost">Cost</label>
+                <input id="cost">
+                <br>
+                <label for="year">Year</label>
+                <input id="year">
+                <br>
+            </fieldset>
+            <br>
+
+            <div id="buttonArea">
+                <button id="save">Save</button>
+                <button id="new">New Car</button>
+                <button id="create">Create</button>
+                <button id="delete">Delete</button>
+            </div>
+            <br>
+            <table id="result"></table>
+
+        </div>
+
+        <div id="addConent">
+            <form id="addForm">
+
+                <div id="divModel" class="property">
+                    <label value="" styleClass="propertyName">Model: </label>
+                    <input type="text" value=""/>
+                </div>
+                <br/>
+
+                <div id="divColor" class="property">
+                    <label styleClass="propertyName">Color: </label>
+                    <input type="text" value=""/>
+                </div>
+                <br/>
+
+                <div id="divCost" class="property">
+                    <label styleClass="propertyName">Cost: </label>
+                    <input type="text" title="Enter a real cost" value=""/>
+                </div>
+                <br/>
+
+                <div align="center">
+                    <input type="submit" value="Save"
+                           action=""/> <br/>
+                    <!--<input type="text" value=""/>-->
+
+                </div>
+            </form>
+        </div>
+
+        <div id="getConent">
+
+            <table id="tableParameters">
+                <thead>
+                <tr>
+                    <td>
+                        <label styleClass="columnName">Parameter</label><br/>
+                    </td>
+                    <td>
+                        <label styleClass="columnName">Value</label><br/>
+
+                    </td>
+                    <td>
+                        <label styleClass="columnName">Description</label><br/>
+                    </td>
+                    <td>
+                        <label styleClass="columnName">Type</label><br/>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <label>model</label>
+                    </td>
+                    <td>
+                        <input type="text" id="modelValue" size="10"/>
+                    </td>
+                    <td>
+                        <label>The model that needs to be fetched</label>
+                    </td>
+                    <td>
+                        <label>String</label>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div align="center">
+                <input type="submit" id="fetchButton"
+                       value="Fetch"/>
+
+                <textarea id="fetchedCar"
+                          rows="10"
+                          readonly="true"></textarea>
+            </div>
+        </div>
+
+        <div id="updateConent">
+            updateConent<br/>
+            updateConent<br/>
+            updateConent<br/>
+            updateConent<br/>
+            updateConent<br/>
+        </div>
+
+        <div id="deleteConent">
+            deleteConent<br/>
+            deleteConent<br/>
+            deleteConent<br/>
+            deleteConent<br/>
+            deleteConent<br/>
+        </div>
+
+
+        <div id="viewConent">
+            <div id="viewRadio">
+                <input type="radio"
+                       name="jsonDataType"
+                       value="simpleList"
+                       checked="checked"/>Simple list
+                <input id="checkView" type="checkbox" checked="checked"/> View
+                <br/>
+                <input type="radio"
+                       name="jsonDataType"
+                       value="json"/>JSON<br/>
+                <input type="radio"
+                       name="jsonDataType"
+                       value="another"/>Another<br/>
+
+            </div>
+            <div>
+                <textarea id="viewData"
+                          rows="10">
+
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="box1">
+
+            <input type="button" id="showModel" value="Show/Hide model"/>
+            <textarea id="jsonModel"
+                      rows="7"
+                      cols="30">
+            </textarea>
+
+
+        </div>
+        <div class="box2">
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+
+        </div>
+        <div class="box3">
+
+            <a href='#/rest/cars/'>123</a>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="footer-nav">
+        <div class="left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">atr1</a></li>
+                <li><a href="#">atr2</a></li>
+                <li><a href="#">atr3</a></li>
+                <li class="last"><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        Copyright - BY UNDEAD<br/>
+    </div>
+</div>
+</div>
+
+<script src="js/header.js"></script>
+<script src="js/boxs.js"></script>
+<script src="js/content.js"></script>
+
+
+</body>
+
+</html>

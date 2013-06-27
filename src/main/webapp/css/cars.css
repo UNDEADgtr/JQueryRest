@@ -1,0 +1,65 @@
+body {
+    font: 80%/1.45em "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+    padding:0.5em;
+}
+
+h1 {
+    text-align:left;
+}
+
+#reset {
+    font-style:oblique;
+}
+
+#result td {
+    padding:3px 10px;
+}
+
+table#result tr.even.row_selected td {
+    background-color: #B0BED9;
+}
+table#result tr.odd.row_selected td {
+    background-color: #9FAFD1;
+}
+
+#buttonArea {
+    width:550px;
+}
+
+.area {
+    background: #f7f7f7;
+    border: solid #C0C0C0 1px;
+    padding: 11px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 11px;
+}
+
+fieldset#carData {
+    font: normal 11px sans-serif;
+    width: 550px;
+}
+
+legend {
+    font-style: italic;
+}
+
+#carData label {
+    background: #cecece;
+    display:inline-block;
+    width: 20%;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 0.2em solid #cecece;
+    line-height: 30px; padding-right: 2px;
+    border-bottom: 2px solid #f7f7f7;
+}
+
+#carData input, #carData select {
+    width: 70%;
+    line-height: 16px;
+}
+
+#carData #RESTART {
+    width:20px;
+}

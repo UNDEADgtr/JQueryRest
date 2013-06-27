@@ -1,0 +1,76 @@
+
+#addConent, #getConent, #updateConent, #deleteConent, #home  {
+    display: none;
+    position: absolute;
+    width: 400px;
+    border: 2px solid #007400;
+}
+
+#home  {
+    position: absolute;
+    width: 620px;
+    border: 2px solid #007400;
+}
+
+.box1{
+    text-align: center;
+}
+
+#jsonModel {
+    display: none;
+}
+
+#viewConent {
+    display: none;
+    float: right;
+    width: 210px;
+    border: 2px solid #007400;
+}
+
+
+#viewRadio{
+    padding: 10px 0px 15px 15px;
+}
+
+#viewRadio [type=radio]{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#checkView{
+    margin-left: 20px;
+}
+
+.property{
+    padding: 5px;
+}
+
+.propertyName{
+    font-size: larger;
+}
+
+.columnName{
+    font-size: larger;
+    font: bolder;
+}
+
+#tableParameters thead th, #tableParameters thead td {
+    text-align: center;
+    height: 50px;
+}
+
+#tableParameters tbody th, #tableParameters tbody td {
+    text-align: center;
+    padding: 3px;
+}
+
+#viewData{
+    width: 200px;
+    margin: 3px;
+}
+
+#fetchedCar{
+    width: 380px;
+    margin: 5px;
+}
+
